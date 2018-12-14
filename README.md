@@ -38,7 +38,7 @@ There are 3 script files. scrna_tsne.sh is the "main" bash script used to start 
 
 The script runs qc.r first, which will automatically load dataset and finish the plots used for QC. The intermediate data are stored in "./temp". With the help of the plots, we can assign the threshold to exclude out non-single cells.
 
-![](figures/qc.pdf)
+![](figures/qc.jpeg)
 
 Because the mitochondria genes have been filtered out when creating Seurat object, the percetn.mito has no useful information. For nGene, I use 200 and 5000 as cutoffs.
 
@@ -48,4 +48,4 @@ Because the mitochondria genes have been filtered out when creating Seurat objec
 
 And then the tsne.r will do normalization, scaling, clustering with PCA, and give out the final result of tSNE.
 
-![](figures/tsne.pdf)
+![](figures/tsne.jpeg)
