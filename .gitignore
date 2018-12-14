@@ -1,6 +1,8 @@
 # Raw data
-raw/mm10GTN
-temp/
+raw/mm10GTN/*
+
+# Temporary files
+temp/*.rdata
 
 # General
 .DS_Store
